@@ -7,7 +7,9 @@ The apk of the app is in the build folder. It may not work due to deprecated lib
 
 #DEMO
 
-No Demo
+No Demo but there is a document ->
+ [MyRoutine-project.docx](https://github.com/btebe/MyRoutine/files/8525176/MyRoutine-project.docx)
+
 
 #Description
 
