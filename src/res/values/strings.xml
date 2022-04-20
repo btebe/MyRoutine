@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyRoutine</string>
+    <string name="audio">Add Audio</string>
+    <string name="action_settings">Settings</string>
+    <string name="backbtn">Back</string>
+    <string name="nextbtn">Next</string>
+    <string name="newtask">New Task</string>
+    <string name="newstep">New Step</string>
+    <string name="cancelbtn">Cancel</string>
+    <string name="donebtn">Done</string>
+    <string name="maintask">Task Name</string>
+    <string name="labelname">Name</string>
+    <string name="inputname">Enter Task Name</string>
+    <string name="time">Time</string>
+    <string name="settimer">Set Timer</string>
+    <string name="timer">Timer</string>
+    <string name="stepname">Enter Step Name</string>
+    <string name="day">Day</string>
+    <string name="title_activity_new_task">NewTask</string>
+    <string name="record">Record</string>
+    <string name="stop">stop</string>
+    <string name="play">play</string>
+    <string name="title_activity_starting_page">StartingPage</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="password">New Password</string>
+    <string name="login_password">Enter Password</string>
+    <string name="title_activity_user_page">UserPage</string>
+    <string name="title_activity_list_of_steps">ListOfSteps</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

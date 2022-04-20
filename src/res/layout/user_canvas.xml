@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="224dp"
+        android:layout_weight="0.08"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+        tools:ignore="ObsoleteLayoutParam,UselessParent"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="330dp">
+
+
+        <GridLayout
+            android:id="@+id/grid3"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:clickable="false"
+            android:columnCount="3"
+            android:rowCount="2"
+            android:descendantFocusability="blocksDescendants"
+            tools:ignore="UselessParent">
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="@dimen/user_width"
+                android:layout_height="@dimen/user_height"
+                android:background="@color/colorPrimary"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="@dimen/user_width"
+                android:layout_height="@dimen/user_height"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:background="@color/indigo"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="@dimen/user_width"
+                android:layout_height="@dimen/user_height"
+                android:background="@color/colorPrimary"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="@dimen/user_width"
+                android:layout_height="@dimen/user_height"
+                android:background="@color/indigo"
+                android:focusable="false"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="@dimen/user_width"
+                android:layout_height="@dimen/user_height"
+                android:background="@color/colorPrimary"
+                android:focusable="false"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:focusableInTouchMode="false"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="@dimen/user_width"
+                android:layout_height="@dimen/user_height"
+                android:background="@color/indigo"
+                android:scaleType="fitXY"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="false"
+                app:srcCompat="@mipmap/ic_launcher"
+                tools:ignore="ContentDescription" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/gainsboro"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/usname"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.92"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Task Name"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText,InefficientWeight" />
+
+            <TextView
+                android:id="@+id/ustime"
+                android:layout_width="134dp"
+                android:layout_height="match_parent"
+                android:gravity="end|center_vertical"
+                android:paddingRight="10dp"
+                android:text="Time"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_super_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/indigo"
+    tools:context="com.myroutine.myroutine.RegisterSuperUser">
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_columnSpan="2"
+        android:gravity="center"
+        android:id="@+id/passbar"
+        android:layout_marginTop="200dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edgytoolbar"
+        tools:ignore="ObsoleteLayoutParam">
+
+
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="23sp"
+            android:hint="@string/password"
+            android:textColor="@color/indigo"
+            android:textCursorDrawable="@null"
+            android:ems="10"
+            android:id="@+id/inputpass"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            tools:ignore="InefficientWeight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_columnSpan="2"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edgytoolbar"
+        android:id="@+id/emailbar"
+        android:layout_below="@+id/passbar"
+        tools:ignore="ObsoleteLayoutParam">
+
+
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textSize="23sp"
+            android:hint="@string/enter_email"
+            android:textColor="@color/indigo"
+            android:textCursorDrawable="@null"
+            android:ems="10"
+            android:id="@+id/inputemail"
+            android:layout_weight="1"
+            android:layout_width="200dp"
+            tools:ignore="InefficientWeight,TextFields" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/lightbulbtwo"
+        android:id="@+id/imageView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:text="Register"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:textSize="23sp"
+        android:onClick="onRegister"
+        android:background="@drawable/registerbtn"
+        android:id="@+id/registerbtn"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/arrowthree"
+        android:id="@+id/bcs"
+        android:visibility="gone"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

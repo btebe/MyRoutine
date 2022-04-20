@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_new_task"
+    android:background="@color/lavendergrey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.myroutine.myroutine.NewTask">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@color/indigo"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+
+        android:layout_marginBottom="52dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/opbtn"
+            android:text="@string/cancelbtn"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:onClick="backFunction"
+            android:background="@drawable/toolbarbtn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/nextbtn"
+            android:background="@drawable/toolbarbtn"
+            android:onClick="nextFunction"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="right"
+            android:text="@string/nextbtn"
+            android:layout_height="wrap_content"
+            tools:ignore="RtlHardcoded" />
+        <TextView
+            android:id="@+id/titletask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/palepurple"
+            android:textSize="25sp"
+            android:text="Edit Task"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edgytoolbar"
+        android:layout_alignParentStart="true"
+        android:id="@+id/taskn">
+
+        <TextView
+            android:text="@string/labelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:textSize="24sp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="23sp"
+            android:hint="@string/inputname"
+            android:textColor="@color/indigo"
+            android:textCursorDrawable="@null"
+            android:ems="10"
+            android:id="@+id/task_name"
+            android:layout_weight="1"
+            android:layout_width="200dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:onClick="onTime"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edgytoolbar"
+        android:layout_marginTop="16dp"
+        android:id="@+id/time"
+        android:layout_below="@+id/taskn">
+        <TextView
+            android:text="@string/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            tools:ignore="InefficientWeight" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="5.46"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/valtime"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/nxticon"
+            android:id="@+id/imageView6"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:onClick="onDay"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/edgytoolbar"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/time">
+        <TextView
+            android:text="@string/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="24sp"
+            android:layout_weight="1"
+            tools:ignore="InefficientWeight" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="3.86"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/valday"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageView
+            android:layout_width="51dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/nxticon"
+            android:id="@+id/imageView7"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</RelativeLayout>

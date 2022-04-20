@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_slide_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+    tools:context="com.myroutine.myroutine.SlideShow">
+
+    <TextView
+        android:text="Step 1"
+        android:layout_width="match_parent"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@color/gainsboro"
+        android:id="@+id/slidetite"
+        android:layout_weight="0.30"
+        android:layout_height="70dp" />
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="391dp"
+        android:id="@+id/picflipper"
+        android:layout_weight="0.41">
+
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gainsboro"
+        android:orientation="horizontal"
+        android:layout_weight="0.74"
+        android:weightSum="1">
+
+        <ImageButton
+
+            android:layout_gravity="bottom"
+            android:onClick="pauseOrplay"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:scaleType="center"
+            android:src="@drawable/playbutton"
+           android:background="@color/gainsboro"
+            android:textSize="24sp"
+            android:id="@+id/playanp"
+
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:background="@color/gainsboro"
+            android:textColor="@color/black"
+            android:text="0:00"
+            android:id="@+id/timerslide"
+            android:layout_width="153dp"
+            android:layout_weight="0.54" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:background="@color/gainsboro"
+            android:onClick="onRefresh"
+            android:src="@drawable/refresh"
+            android:id="@+id/refresh"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

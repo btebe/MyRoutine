@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_step"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavendergrey"
+    android:columnCount="2"
+
+    tools:context="com.myroutine.myroutine.NewStep">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_columnSpan="2"
+
+        android:layout_marginBottom="52dp"
+        android:background="@color/indigo"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <Button
+            android:id="@+id/opbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarbtn"
+            android:onClick="backFunction"
+            android:text="@string/cancelbtn"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+
+        <Button
+            android:id="@+id/donebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/toolbarbtn"
+            android:onClick="doneFunction"
+            android:text="@string/donebtn"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/newstep"
+            android:textColor="@color/palepurple"
+            android:textSize="25sp"
+            android:id="@+id/stepnamae" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="2"
+        android:id="@+id/gridid"
+        android:layout_marginTop="87dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/addpicview"
+            android:layout_column="0"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_row="0"
+
+            android:onClick="takePhoto"
+            android:background="@drawable/edgytoolbar"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/cameraicon"
+            tools:ignore="ContentDescription"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <ImageButton
+            android:id="@+id/voicerecbtn"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="end"
+            android:background="@drawable/edgytoolbar"
+
+            app:srcCompat="@drawable/recordvoice"
+            android:onClick="recordVoice"
+            tools:ignore="ContentDescription,RtlHardcoded"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnSpan="2"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/edgytoolbar"
+            android:id="@+id/taskn">
+
+            <TextView
+                android:text="@string/labelname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="24sp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textSize="23sp"
+                android:hint="@string/stepname"
+                android:textColor="@color/indigo"
+                android:textCursorDrawable="@null"
+                android:ems="10"
+                android:id="@+id/step_name"
+                android:layout_weight="1"
+                android:layout_width="200dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:onClick="timerFunction"
+            android:layout_columnSpan="2"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="@drawable/edgytoolbar"
+            android:layout_marginTop="16dp"
+            android:id="@+id/time"
+            android:layout_below="@+id/taskn"
+            tools:ignore="ObsoleteLayoutParam">
+            <TextView
+                android:text="@string/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="24sp"
+
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="8.12"
+            android:textSize="24sp"
+            android:layout_marginLeft="16dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/valtimer" />
+            <ImageView
+                android:layout_width="51dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/nxticon"
+                android:id="@+id/imageView7"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:text="delete"
+            android:visibility="gone"
+            android:textSize="18sp"
+            android:layout_columnSpan="2"
+            android:background="@drawable/deletebtn"
+            android:layout_height="70dp">
+
+        </Button>
+
+    </GridLayout>
+
+
+
+</RelativeLayout>

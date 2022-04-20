@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.myroutine.myroutine.Options">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/paint"
+        android:id="@+id/imageView"
+        android:scaleType = "centerCrop"
+        tools:ignore="ContentDescription"
+        android:layout_above="@+id/etpassword"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+
+        android:hint="enter name"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/etpassword"
+        android:layout_above="@+id/viewallbtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="parents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLogin"
+        android:id="@+id/parentsbtn"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/etpassword"
+        android:layout_alignEnd="@+id/etpassword" />
+
+    <Button
+        android:text="View all"
+        android:onClick="onViewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewallbtn"
+
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/parentsbtn"
+        android:layout_toStartOf="@+id/parentsbtn" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/funkids"
+        android:layout_centerInParent="true"
+        android:id="@+id/imageView3"
+        android:layout_marginBottom="124dp"
+        android:layout_above="@+id/etpassword"
+        android:layout_alignRight="@+id/etpassword"
+        android:layout_alignEnd="@+id/etpassword" />
+
+
+
+
+
+</RelativeLayout>

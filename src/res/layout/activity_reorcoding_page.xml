@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reorcoding_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavendergrey"
+    tools:context="com.myroutine.myroutine.RecordingPage">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="52dp"
+        android:background="@color/indigo"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <Button
+            android:id="@+id/abcbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarbtn"
+            android:onClick="backFunction"
+            android:text="@string/cancelbtn"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+
+        <Button
+            android:id="@+id/donerecbtnbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/toolbarbtn"
+            android:onClick="doneFunction"
+            android:text="@string/donebtn"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/audio"
+            android:textColor="@color/palepurple"
+            android:textSize="25sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/taskn"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/edgytoolbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <ImageView
+
+            android:id="@+id/imgView3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/recordvoice"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/loadrec"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.27"
+            android:ems="10"
+            android:text="00:00:30"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/taskn"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edgytoolbar"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:weightSum="1"
+        tools:ignore="ObsoleteLayoutParam">
+
+        <Button
+            android:id="@+id/recordbtn"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toolbarbtn"
+
+            android:text="@string/record"
+            tools:ignore="ButtonStyle,RtlHardcoded"
+            android:layout_width="80dp" />
+
+        <Button
+            android:id="@+id/stopbtn"
+
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/toolbarbtn"
+
+            android:text="@string/stop"
+            tools:ignore="ButtonStyle,RtlHardcoded"
+            android:layout_width="80dp" />
+
+        <Button
+            android:id="@+id/playrecbtn"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbarbtn"
+
+            android:text="@string/play"
+            tools:ignore="ButtonStyle"
+            android:layout_width="80dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

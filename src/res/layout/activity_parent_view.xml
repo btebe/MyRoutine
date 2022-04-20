@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.myroutine.myroutine.SuperUserPage">
+
+    <include layout="@layout/content_parent_view" />
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="@color/indigo"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/opbtn"
+                android:text="@string/backbtn"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:onClick="backFunction"
+                android:background="@drawable/toolbarbtn"/>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/palepurple"
+                android:textSize="25sp"
+                android:text="@string/app_name"/>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addbtn"
+        android:layout_width="80dp"
+        android:layout_gravity="bottom|center"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_height="80dp"
+        app:backgroundTint="@color/palepurple"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/gamebtn"
+        android:layout_width="60dp"
+        android:onClick="onGame"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_height="80dp"
+        android:src="@drawable/gbutton"
+        android:scaleType="center"
+        app:backgroundTint="@android:color/holo_purple"
+        android:layout_gravity="bottom|left"
+        tools:ignore="RtlHardcoded" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/settingsbtn"
+        android:layout_width="60dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/settingone"
+        android:layout_height="80dp"
+        app:backgroundTint="@color/palepurple"/>
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>
