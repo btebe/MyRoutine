@@ -1,5 +1,5 @@
 # MyRoutine
-A university class project | 2016-2017
+A university class project  |  2016-2017
 
 #Notice
 
